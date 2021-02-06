@@ -133,7 +133,8 @@ body {
   color: var(--accent-color);
 }
 
-.mail-link:hover {
+.mail-link:hover,
+.mail-link:focus {
   color: var(--accent-color);
 }
 
@@ -146,7 +147,8 @@ body {
   color: var(--text-color);
 }
 
-.tel-link:hover {
+.tel-link:hover,
+.tel-link:focus {
   color: var(--accent-color);
 }
 
@@ -417,12 +419,11 @@ body {
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 20px 63px;
+  width: 170px;
+  height: 90px;
 }
 
 .clients-list-icon {
-  width: 44px;
-  height: 49px;
   fill: #afb1b8;
 }
 
@@ -563,6 +564,15 @@ body {
 .social-list-link-side:focus .social-list-icon {
   fill: #ffffff;
 }
+
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list-footer {
+  display: flex;
+}
+
 /*========END FOOTER========*/
 
 /*===END FIRST LATTER===*/
@@ -573,6 +583,7 @@ body {
 
 .buttons {
   margin-top: 94px;
+  margin-bottom: 94px;
 }
 
 .container-buttons {
@@ -593,6 +604,10 @@ body {
   margin-right: 8px;
 }
 
+.buttons-list-button:hover {
+  color: var(--accent-color);
+}
+
 .button-second-page {
   font-weight: 500;
   font-size: 16px;
@@ -606,6 +621,11 @@ body {
   border-radius: 4px;
   text-align: center;
   background-color: #f5f4fa;
+}
+
+.button-second-page:hover,
+.button-second-page:focus {
+  color: var(--accent-color);
 }
 
 .all {
@@ -638,6 +658,7 @@ body {
 }
 
 /*карточки*/
+
 .container-cards {
   width: 1230px;
   padding-left: 15px;
@@ -669,6 +690,16 @@ body {
 .item {
   background: #ffffff;
   border: 1px solid #eeeeee;
+}
+
+.cards-links {
+  text-decoration: none;
+}
+
+.cards-links:hover,
+.cards-links:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /*==text==*/
