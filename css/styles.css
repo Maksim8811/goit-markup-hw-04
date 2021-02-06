@@ -116,7 +116,7 @@ body {
   margin-right: 10px;
   width: 16px;
   height: 12px;
-  fill: #757575;
+  fill: currentColor;
 }
 
 .navigation-list-link {
@@ -133,8 +133,7 @@ body {
   color: var(--accent-color);
 }
 
-.mail-link:hover,
-.mail-link:focus {
+.mail-link:hover {
   color: var(--accent-color);
 }
 
