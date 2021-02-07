@@ -381,6 +381,15 @@ body {
   fill: #ffffff;
 }
 
+.social-list-icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+.social-list-link-side:hover .social-list-icon-footer,
+.social-list-link-side:focus .social-list-icon-footer {
+}
+
 /*========END TEAM========*/
 
 /*========CLIENTS=======*/
@@ -604,10 +613,6 @@ body {
   margin-right: 8px;
 }
 
-.buttons-list-button:hover {
-  color: var(--accent-color);
-}
-
 .button-second-page {
   font-weight: 500;
   font-size: 16px;
@@ -621,11 +626,6 @@ body {
   border-radius: 4px;
   text-align: center;
   background-color: #f5f4fa;
-}
-
-.button-second-page:hover,
-.button-second-page:focus {
-  color: var(--accent-color);
 }
 
 .all {
@@ -648,9 +648,13 @@ body {
   width: 130px;
 }
 
-.button-second-page:hover {
+.button-second-page:hover,
+.button-second-page:focus {
   background-color: var(--accent-color);
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .filter-list:not(:last-child) {
@@ -696,8 +700,8 @@ body {
   text-decoration: none;
 }
 
-.cards-links:hover,
-.cards-links:focus {
+.card:focus,
+.card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
